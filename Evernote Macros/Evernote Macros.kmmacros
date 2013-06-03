@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string>/Users/brandonpittman/Dropbox/Documents/Code/AppleScript/Evernote/Evernote Title Append.scpt</string>
+						<key>Text</key>
+						<string>tell application "Evernote"		set the_dialog to display dialog "What would you like to append?" default answer "" buttons {"Append", "Cancel"} default button "Append"	if button returned of the_dialog is "Append" then set append_text to text returned of the_dialog	end telltell application "Evernote"		set theNotes to get selection		repeat with n in theNotes				set theTitle to title of n		set title of n to theTitle &amp; " " &amp; append_text			end repeatend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-iTunesNext</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391912021.17407799</real>
+				<key>Name</key>
+				<string>Append to Title</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>DF0B6069-D0F2-4561-8138-76C63CAAA4FA</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "Evernote"		set the_notes to selection		set the_dialog to display dialog "What would you like to title these notes?" default answer ""		set the_title to text returned of the_dialog		repeat with n in the_notes				set title of n to the_title			end repeat	end tell
+
+return "Titles changed to \"" &amp; the_title &amp; "\"."</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-ToolbarDocumentsFolder</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391915490.05583</real>
+				<key>Name</key>
+				<string>Batch Title Change</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>11</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>062696BD-4BBC-4607-AE8E-340B08D74F10</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "Safari"	set my_url to URL of document 1
+	set my_title to name of document 1end telltell application "Evernote"	create note from url my_urlend tell
+
+return my_title &amp; " clipped to Evernote."</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-Safari</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391911473.39306402</real>
+				<key>Name</key>
+				<string>Clip URL to Evernote</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>32</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>81967377-9922-4F79-87C1-F887DAE90153</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Note</string>
+							<string>Copy Note Link</string>
+						</array>
+						<key>StopOnFailure</key>
+						<true/>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.evernote.Evernote</string>
+							<key>Name</key>
+							<string>Evernote</string>
+							<key>NewFile</key>
+							<string>/Applications/Evernote.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391876482.36806297</real>
+				<key>Name</key>
+				<string>Copy Note Link</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>44</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>22A330EB-44D0-4C2A-88CF-C918143639A3</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>AllWindows</key>
+						<true/>
+						<key>AlreadyActivatedActionType</key>
+						<string>Normal</string>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.evernote.Evernote</string>
+							<key>Name</key>
+							<string>Evernote</string>
+							<key>NewFile</key>
+							<string>/Applications/Evernote.app</string>
+						</dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ActivateApplication</string>
+						<key>ReopenWindows</key>
+						<true/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>391433175.29450399</real>
+				<key>Name</key>
+				<string>Evernote Activates</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.evernote.Evernote</string>
+							<key>Name</key>
+							<string>Evernote</string>
+							<key>NewFile</key>
+							<string>/Applications/Evernote.app</string>
+						</dict>
+						<key>FireType2</key>
+						<string>Activate</string>
+						<key>MacroTriggerType</key>
+						<string>Application</string>
+						<key>RepeatTime</key>
+						<integer>60</integer>
+						<key>Target</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>CC8305FD-08C0-4C0A-96AA-96C01E68F16D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string>/Users/brandonpittman/Dropbox/Documents/Code/AppleScript/Evernote/Move to Archive.scpt</string>
+						<key>Text</key>
+						<string>tell application "Evernote"		set theNotes to (get selection)		repeat with n in theNotes		move n to notebook "Archive"	end repeat	end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-DropFolder</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391912045.40048999</real>
+				<key>Name</key>
+				<string>Move to Archive</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6144</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>1B74EF1E-D40D-45BE-9639-D4462659169D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string>/Users/brandonpittman/Dropbox/Documents/Code/AppleScript/Evernote/Evernote Title Prepend.scpt</string>
+						<key>Text</key>
+						<string>tell application "Evernote"		set the_dialog to display dialog "What would you like to prepend?" default answer "" buttons {"Prepend", "Cancel"} default button "Prepend"	if button returned of the_dialog is "Prepend" then		set prepend_text to text returned of the_dialog	end ifend telltell application "Evernote"		set theNotes to get selection		repeat with n in theNotes				set theTitle to title of n		set title of n to prepend_text &amp; " " &amp; theTitle			end repeatend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-iTunesPrevious</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391912004.37020701</real>
+				<key>Name</key>
+				<string>Prepend to Title</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>855ED390-81D9-4BBC-92CD-B6F75BC4DADE</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Evernote.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string>/Users/brandonpittman/Dropbox/Documents/Code/AppleScript/Evernote/Send to OmniFocus.scpt</string>
+						<key>Text</key>
+						<string>tell application "Evernote"		set myNotes to selection		repeat with n in myNotes				set note_link to note link of n		set note_title to title of n			end repeat	end tellnewOFtask(note_title, note_link, "", "")on newOFtask(theTask, theNote, taskContext, taskProject)		tell application "OmniFocus"		tell document 1			make new inbox task with properties {name:theTask, note:theNote}		end tell	end tell	end newOFtaskreturn "\"" &amp; note_title &amp; "\" added to OmniFocus."</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/OmniFocus.app</string>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>391912118.950261</real>
+				<key>Name</key>
+				<string>Send to OmniFocus</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>31</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0BA462EC-6794-49FA-9078-F8D5B9E11FA0</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>779A23AE-B4FE-4EA0-8A9C-7F5A42DA293F</string>
+	</dict>
+</array>
+</plist>
